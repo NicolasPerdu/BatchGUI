@@ -5,10 +5,16 @@ compiler:
 - gcc
 os:
 - linux
+
 install:
 - sudo apt-get update
-- sudo apt-get install -y qt-sdk
+- sudo add-apt-repository --yes ppa:beineri/opt-qt57-trusty
+- sudo apt-get install -qq qt57-meta-full
+
+before_script:
+- QT_ENV_SCRIPT=$(find /opt -name 'qt*-env.sh')
+- source $QT_ENV_SCRIPT
+ 
 script:
-- qmake -project
-- qmake BatchGUI.pro
+- qmake BatchGUI.pro -r -spec linux-g++ CONFIG+=release
 - make
