@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<prog out="examples/result/$FILE$-new.png" exe="examples/bin/TruePNG" arg="/out $OUT$ /o max $IN$">
+		<prog out="examples/result/$FILE$.png" exe="examples/bin/zopflipng" arg="-y -m --filters=01234mepb --lossy_transparent $IN$ $OUT$">
+			<prog out="examples/result/$FILE$.png" exe="examples/bin/deflopt" arg="$IN$" />
+		</prog>
+	</prog>
+</root> 
