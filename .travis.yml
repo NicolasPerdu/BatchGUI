@@ -5,17 +5,10 @@ compiler:
 - gcc
 os:
 - linux
-before_install:
-- echo $LANG
-- echo $LC_ALL
+install:
 - sudo apt-get update
-- sudo apt-get install -y gcc qt-sdk
-- gem update --system
-- gem --version
-before_script:
-- travis_retry bundle
-script: rake ci
-after_success:
-branches:
-  only:
-  - master
+- sudo apt-get install -y qtbase5-dev
+script:
+- qmake -project
+- qmake BatchGUI.pro
+- make
