@@ -1,5 +1,6 @@
 # BatchGUI
 ![BatchGUI screenshot](http://www.glusoft.com/data/img/BatchGUI.png)
+
 [![Build Status](https://travis-ci.org/NicolasPerdu/BatchGUI.svg?branch=master)](https://travis-ci.org/NicolasPerdu/BatchGUI)
 
 ## Examples
