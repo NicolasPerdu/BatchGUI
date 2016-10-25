@@ -27,6 +27,7 @@ In this case one image is compressed with TruePNG and the other use zopflipng.
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<prog out="examples/result/$FILE$-new.png" exe="examples/bin/TruePNG" arg="/out $OUT$ /o max $IN$" />
-	<prog out="examples/result/$FILE$-newzopfli.png" exe="examples/bin/zopflipng" arg="-y -m --filters=01234mepb $IN$ $OUT$"/>
+	<prog out="examples/result/$FILE$-newzopfli.png" exe="examples/bin/zopflipng" arg="-y -m 
+	--filters=01234mepb $IN$ $OUT$"/>
 </root>
 ```
