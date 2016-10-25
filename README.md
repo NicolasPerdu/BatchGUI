@@ -5,7 +5,7 @@
 
 ## Examples
 
-Compress PNG images files using three program :
+Compress PNG images files using three programs :
 **Input Img -> TruePNG -> zoflipng -> deflopt -> Output Img**
 
 ```xml
